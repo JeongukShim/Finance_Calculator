@@ -1,0 +1,138 @@
+{
+   "checksum": "d5fdbd9f5968eb982c66b4d3f031343e",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13420510690245985",
+            "date_last_used": "13425104602093854",
+            "guid": "3d7b1fcc-9275-458a-af74-5ad9963b1b44",
+            "id": "7",
+            "name": "LGEP3.0",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://sso.lge.com/eplogin.jsp?TYPE=33554432&REALMOID=06-00029d8b-426a-1ae9-9e42-00017f000000&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-aR51ezAWGvKr%2fF1X2mOCoeBO0Y5KOTAn0rmuTrznORul49Ar0VRn5%2flCOb14UZCt&TARGET=-SM-http%3a%2f%2fnewep%2elge%2ecom%2fssoAgentLogin%2edo",
+            "visit_count": 8
+         }, {
+            "date_added": "13408438062073401",
+            "date_last_used": "13431506440205484",
+            "guid": "86f86181-60fa-47a0-8b95-a9e0cbe85b66",
+            "id": "8",
+            "name": "partner.hyundai.com/gscm/",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://partner.hyundai.com/gscm/",
+            "visit_count": 38
+         }, {
+            "date_added": "13409651036845891",
+            "date_last_used": "13432875970166300",
+            "guid": "0f8532fc-10ab-414e-9265-6ef1dbb86dca",
+            "id": "9",
+            "name": "ASIMS",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://asims.hmc.co.kr/",
+            "visit_count": 50
+         }, {
+            "date_added": "13417000456497933",
+            "date_last_used": "13428482222719124",
+            "guid": "f1f18f8f-f2c0-4255-a806-b18a236926d2",
+            "id": "10",
+            "name": "설문조사",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://smore.im/dash",
+            "visit_count": 5
+         }, {
+            "date_added": "13420854904838249",
+            "date_last_used": "13425985093166349",
+            "guid": "1353c388-41d7-43f9-98e4-10ac77176c84",
+            "id": "11",
+            "name": "현대모터그룹 방문신청",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://visitmain.kia.co.kr/",
+            "visit_count": 5
+         }, {
+            "children": [ {
+               "date_added": "13428640584274099",
+               "date_last_used": "13432175781052918",
+               "guid": "0ea8c736-dcc8-40f6-8e8d-22c0b2ec5a1b",
+               "id": "13",
+               "name": "Easy & Fun 퀴즈앤::board",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://quizn.show/pbd/info/board/1113834",
+               "visit_count": 8
+            }, {
+               "date_added": "13428640589861170",
+               "date_last_used": "13431139051917415",
+               "guid": "426a713b-24d0-49c9-ba2e-1ad1b937d4f3",
+               "id": "14",
+               "name": "세계관 · LG SW PM Competition 2026",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://myungsook-chin.github.io/lgswpmc-2026/worldview.html",
+               "visit_count": 6
+            } ],
+            "date_added": "13428640580838167",
+            "date_last_used": "0",
+            "date_modified": "13428640589861170",
+            "guid": "b03ea646-8c83-4117-be24-f7bb7880b650",
+            "id": "12",
+            "name": "PM Competition",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13432874297540089",
+         "date_last_used": "0",
+         "date_modified": "13420854904838249",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "즐겨찾기 모음",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13432874297540089",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "다른 즐겨찾기",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13432874297540089",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "모바일 즐겨찾기",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13432874297540089",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "작업 영역",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCBy7K2WgAQAAEgAqGHlQdXBLRzZUR3hMaFpTSXd3K0c4UFE9PUgDoAYHEo4BCAISiQEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJGVhYWE3ZWFiLTEyZDItNTFkZi05Zjk5LTNlZGQ0OGI3YThmYRgAIAAoADCp/v3H9jA43YT+x/YwQN2E/sf2MEocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PWUAAAAAagDCPgJgABKuAQgOEqkBChxUbnpOUjh3amN3Q1IzR01jMVpmTFg2ZWx4eGc9EiQ0MjZhNzEzYi0yNGQwLTQ5YzktYmEyZS0xYWQxYjkzN2Q0ZjMYACAAKAAwupq97P8zOMnx+uH4M0DJ8frh+DNKHGdXWWloaFJQRVRJYmdiR1dQelJjaVVPVkt3Yz1aHiIceCs5dHRNYXdJZ1R6Nm9QRUptb2NyeVJNR29FPWUAAAAAagDCPgJgBRKvAQgMEqoBChxEMXdPN05hdTdqL3B3eXp1eUxBNU5nT0Q5M2M9EiRiMDNlYTY0Ni04YzgzLTQxMTctYmUyNC1mN2JiNzg4MGI2NTAYACAAKAAwsaT54fgzOMOO+uH4M0DDjvrh+DNKHEQwQ3Q3blEzRElSTnlUQlF2Zm4xYzNPR2V2RT1aHyId9VRiRGZXTnB2aUFDKzJBbTEraDQ1dHFZelM3Zz1lAAAAAGoAwj4CYAASjgEIARKJAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkNDNkN2ExYjAtZDhlYi01MGM3LTllZTctNzcxODdhYzBlMzZlGAAgACgAMKj+/cf2MDjChP7H9jBAwoT+x/YwShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9ZQAAAABqAMI+AmAAEq8BCAoSqgEKHG9CZmZhcXJFRE1abE5kYUprSXBJNHBYdVN5cz0SJGYxZjE4ZjhmLWYyYzAtNDI1NS1hODA2LWIxOGEyMzY5MjZkMhgAIAAoADCypPnh+DM4jO3VlsszQIzt1ZbLM0ocT0Z1MlpFZFUyY2Z6SmkweG8xUXYxSFNNcDZJPVofIh3WcEZ1THU5S2ZJakZ4aEVJTnYvZEx2L0xPdC8wPWUtR+73agDCPgJgBRKvAQgJEqoBChxJeHM3WVRxeXhOSlk5aUU4aFZDM3NmM1Boc0k9EiQwZjg1MzJmYy0xMGFiLTQxNGUtOTI2NS02ZWYxZGJiODZkY2EYACAAKAAwyZTaqIY0OMig+s67M0DIoPrOuzNKHHJ4a3VNYUE0aWY4cVlkaDdiK3V1aGw3VzdyOD1aHyIdrStUWndsZm40N0lLSHRLQXp1NG1SeEVNdm1yWT1lesVhtWoAwj4CYAUSjgEIAxKJAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkYTU2OTZjZmYtYzU0OS01OTAwLThlYTctNDM4ZTlkMzc3OWQ3GAAgACgAMK7+/cf2MDjqhf7H9jBA6oX+x/YwShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89ZQAAAABqAMI+AmAAEq8BCAcSqgEKHDNjS0szNEVVZkg1ZTJ5T0NmU21HTVJPbVIvND0SJDNkN2IxZmNjLTkyNzUtNDU4YS1hZjc0LTVhZDk5NjNiMWI0NBgAIAAoADDrnI336jM4ra/GoNgzQK2vxqDYM0ocZ2NQS2dMVno2MUZMTmpCdTByOTVia2Zrb2ZZPVofIh0peGx2emFIVTN3WHd2SytoMDgzMmViUkN0OEZzPWXSylIYagDCPgJgBRKuAQgIEqkBChxtOURobmNCWGdMWDBIbFlKWXNlOWxEQURBOFU9EiQ4NmY4NjE4MS02MGZhLTQ3YTAtOGI5NS1hOWUwY2JlODViNjYYACAAKAAwyubUm4E0OJig+s67M0CYoPrOuzNKHFdLN0lWWnZMRk9IQ2hmNmdNdTk4bHFPcmFIND1aHiIcUktxc05jN1JpQWFJWWh1WHF4SFBXY3JmaHFZPWUAAAAAagDCPgJgBRKuAQgNEqkBChxQOStVeEQ1ZlBZTjN5YWlUZzA3ZlRWcEZ2VTA9EiQwZWE4YzczNi1kY2M4LTQwZjYtOGU4ZC0yMmMwYjJlYzVhMWIYACAAKAAwo6vq2oM0ONDz+uH4M0DQ8/rh+DNKHDhsSFZjeUU2VjVxWFpSdDRjcHg4WmNMMXJqVT1aHiIcVG9Ec0REeVdtSDMwM3JTNkpFZVZzMWpyTm9ZPWX8HGrsagDCPgJgBRKOAQgFEokBChx3UkJyWkwrNlBBOWF2S2dqTlA3SlhETGNmdnM9EiQ4Y2QzYzcyYi1hNmQ5LTUxYzQtOGIyOS01OTYwZDY3YTk3YzQYACAAKAAwkbOy1rkzOJy3sta5M0Cct7LWuTNKHG5teDY1c1FEdnhJOFRnRWV2K0ErbnR0b1NuND1lAAAAAGoAwj4CYAASrwEICxKqAQocUTIzaG8wNTRLMHQ5THlVWFpOTW0xeWxFWmRzPRIkMTM1M2MzODgtNDFkNy00M2Y5LTk4ZTQtMTBhYzc3MTc2Yzg0GAAgACgAMLnRxe7sMziLiaGW2zNAi4mhltszShw5YW91NmFkdHNLdU1uQWdCcFN2b3lmVTZJREk9Wh8iHet2RXF6dk9IeDBIUk43VEIxdHlNQ1JZSWdyN3c9ZQAAAABqAMI+AmAFMAA4AA==",
+   "version": 1
+}
