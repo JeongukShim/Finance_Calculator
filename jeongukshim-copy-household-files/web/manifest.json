@@ -1,14 +1,20 @@
 {
-    "name": "fixed_cost_household_book",
-    "short_name": "fixed_cost_household_book",
+    "name": "고정비계산기",
+    "short_name": "고정비계산기",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#E8F3EC",
+    "theme_color": "#176B5B",
+    "description": "고정비를 한눈에 관리하는 가계부 앱.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
+        {
+            "src": "icons/app_icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
         {
             "src": "icons/Icon-192.png",
             "sizes": "192x192",

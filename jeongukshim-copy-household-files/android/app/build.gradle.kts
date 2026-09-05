@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "com.example.fixed_cost_household_book"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "30.0.16138531"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
