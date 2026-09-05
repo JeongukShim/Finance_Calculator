@@ -414,6 +414,7 @@ class PayCycleListPage extends StatefulWidget {
 class _PayCycleListPageState extends State<PayCycleListPage> {
   int? _weekdayFilter;
   bool _showOnlyUnchecked = false;
+  bool _showSalary = false;
 
   @override
   Widget build(BuildContext context) {
@@ -442,15 +443,55 @@ class _PayCycleListPageState extends State<PayCycleListPage> {
       appBar: AppBar(
         title: const Text('이번 월급 주기'),
         actions: [
-          IconButton(
-            onPressed: () => _confirmResetAllEntries(context),
-            tooltip: '일별 기록 일괄 초기화',
-            icon: const Icon(Icons.delete_sweep_outlined),
-          ),
-          IconButton(
-            onPressed: widget.onResetPayday,
+          PopupMenuButton<String>(
             tooltip: '월급날 재설정',
             icon: const Icon(Icons.settings),
+            onSelected: (value) {
+              switch (value) {
+                case 'payday':
+                  widget.onResetPayday();
+                case 'salary':
+                  _showSalarySettings(context);
+                case 'reset':
+                  _confirmResetAllEntries(context);
+                case 'developer':
+                  _showDeveloperInfo(context);
+              }
+            },
+            itemBuilder: (context) => const [
+              PopupMenuItem<String>(
+                value: 'payday',
+                child: ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: Icon(Icons.calendar_month_outlined),
+                  title: Text('월급일 설정'),
+                ),
+              ),
+              PopupMenuItem<String>(
+                value: 'salary',
+                child: ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: Icon(Icons.payments_outlined),
+                  title: Text('월급 설정'),
+                ),
+              ),
+              PopupMenuItem<String>(
+                value: 'reset',
+                child: ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: Icon(Icons.delete_sweep_outlined),
+                  title: Text('일별 기록 초기화'),
+                ),
+              ),
+              PopupMenuItem<String>(
+                value: 'developer',
+                child: ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: Icon(Icons.info_outline),
+                  title: Text('개발자 정보'),
+                ),
+              ),
+            ],
           ),
         ],
         bottom: const TabBar(
@@ -508,15 +549,28 @@ class _PayCycleListPageState extends State<PayCycleListPage> {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  const SizedBox(height: 12),
-                  SalaryInput(
-                    initialSalary: widget.salary,
-                    onChanged: widget.onSalaryChanged,
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    '월급: ${_formatWon(widget.salary)}',
-                    style: const TextStyle(fontWeight: FontWeight.w600),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          '월급: ${_showSalary ? _formatWon(widget.salary) : '••••••원'}',
+                          style: const TextStyle(fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                      IconButton(
+                        tooltip: _showSalary ? '월급 숨기기' : '월급 보기',
+                        onPressed: () {
+                          setState(() {
+                            _showSalary = !_showSalary;
+                          });
+                        },
+                        icon: Icon(
+                          _showSalary
+                              ? Icons.visibility_off_outlined
+                              : Icons.visibility_outlined,
+                        ),
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 6),
                   Text(
@@ -719,6 +773,38 @@ class _PayCycleListPageState extends State<PayCycleListPage> {
     );
   }
 
+  Future<void> _showSalarySettings(BuildContext context) async {
+    var salary = widget.salary;
+    final savedSalary = await showDialog<int>(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text('월급 설정'),
+          content: SalaryInput(
+            initialSalary: widget.salary,
+            onChanged: (value) {
+              salary = value;
+            },
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext),
+              child: const Text('취소'),
+            ),
+            FilledButton(
+              onPressed: () => Navigator.pop(dialogContext, salary),
+              child: const Text('저장'),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (savedSalary != null) {
+      widget.onSalaryChanged(savedSalary);
+    }
+  }
+
   Future<void> _confirmResetAllEntries(BuildContext context) async {
     final shouldReset = await showDialog<bool>(
       context: context,
@@ -743,6 +829,24 @@ class _PayCycleListPageState extends State<PayCycleListPage> {
     if (shouldReset == true) {
       widget.onResetAllEntries();
     }
+  }
+
+  Future<void> _showDeveloperInfo(BuildContext context) async {
+    await showDialog<void>(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text('개발자 정보'),
+          content: const Text('개발자 : 심정욱\n이메일 : sim12131@naver.com'),
+          actions: [
+            FilledButton(
+              onPressed: () => Navigator.pop(dialogContext),
+              child: const Text('확인'),
+            ),
+          ],
+        );
+      },
+    );
   }
 
   Future<void> _showManageDayItemsDialog(
